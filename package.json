@@ -1,0 +1,25 @@
+{
+  "name": "nextjs-dashboard-auth",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "lucide-react": "^0.462.0",
+    "next": "14.2.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.1",
+    "@types/react": "19.1.13",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.3.3"
+  }
+}
