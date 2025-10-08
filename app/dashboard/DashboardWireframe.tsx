@@ -12,7 +12,7 @@ import QuickLinks from "../../components/QuickLinks";
 import NotificationsCard from "../../components/NotificationsCard";
 
 import GraphFlow from "../../components/GraphFlow";
-import ForceTree from "../../components/ForceTree";
+// import ForceTree from "../../components/ForceTree";
 
 export default function DashboardWireframe() {
   return (
@@ -141,12 +141,12 @@ export default function DashboardWireframe() {
           </div>
 
           {/* Sales Analytics Chart */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-medium mb-3">
               Monthly Sales Performance
             </h3>
             <ForceTree />
-          </div>
+          </div> */}
         </div>
       </section>
 
