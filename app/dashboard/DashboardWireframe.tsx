@@ -11,12 +11,15 @@ import ProductsTable from "../../components/ProductsTable";
 import QuickLinks from "../../components/QuickLinks";
 import NotificationsCard from "../../components/NotificationsCard";
 
+import GraphFlow from "../../components/GraphFlow";
+import ForceTree from "../../components/ForceTree";
+
 export default function DashboardWireframe() {
   return (
-    <div className="space-y-10">
-      {/* KPIs */}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      {/* Key Metrics */}
       <section>
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
           Key Metrics
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -41,9 +44,9 @@ export default function DashboardWireframe() {
         </div>
       </section>
 
-      {/* Quick Stats */}
+      {/* Quick Insights */}
       <section>
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
           Quick Insights
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -81,22 +84,27 @@ export default function DashboardWireframe() {
           />
         </div>
       </section>
-
       {/* Analytics */}
       <section>
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
           Analytics
         </h2>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Sales Overview */}
           <div className="lg:col-span-2">
             <h3 className="text-lg font-medium mb-3">Sales Overview</h3>
             <ChartLine />
           </div>
+
+          {/* Revenue Distribution */}
           <div>
             <h3 className="text-lg font-medium mb-3">Revenue Distribution</h3>
             <ChartPie />
           </div>
         </div>
+
+        {/* Orders Overview */}
         <div className="mt-6">
           <h3 className="text-lg font-medium mb-3">Orders Overview</h3>
           <ChartBar />
@@ -105,7 +113,7 @@ export default function DashboardWireframe() {
 
       {/* Management */}
       <section>
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
           Management
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -119,20 +127,43 @@ export default function DashboardWireframe() {
           </div>
         </div>
       </section>
-      {/* Quick Links */}
+
+      {/* Graphs & Visuals */}
       <section>
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-          Quick Links
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+          Graphs & Visuals
         </h2>
-        <QuickLinks />
+        <div className="space-y-8">
+          {/* User Flow Diagram */}
+          <div>
+            <h3 className="text-lg font-medium mb-3">User Journey Flow</h3>
+            <GraphFlow />
+          </div>
+
+          {/* Sales Analytics Chart */}
+          <div>
+            <h3 className="text-lg font-medium mb-3">
+              Monthly Sales Performance
+            </h3>
+            <ForceTree />
+          </div>
+        </div>
       </section>
 
-      {/* Activity */}
-      <section>
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-          Activity & Notifications
-        </h2>
-        <NotificationsCard />
+      {/* Quick Links & Activity */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div>
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+            Quick Links
+          </h2>
+          <QuickLinks />
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+            Activity & Notifications
+          </h2>
+          <NotificationsCard />
+        </div>
       </section>
     </div>
   );
