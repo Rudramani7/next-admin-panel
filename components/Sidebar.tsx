@@ -9,11 +9,13 @@ import {
   Menu,
   ChevronLeft,
   X,
+  BarChart,
 } from "lucide-react";
 import { useState } from "react";
 
 const links = [
   { href: "/dashboard", label: "Dashboard", icon: Home },
+  { href: "/visuals", label: "Visuals", icon: BarChart },
   { href: "/users", label: "Users", icon: Users },
   { href: "/reports", label: "Reports", icon: BarChart2 },
   { href: "/settings", label: "Settings", icon: Settings },

@@ -11,8 +11,6 @@ import ProductsTable from "../../components/ProductsTable";
 import QuickLinks from "../../components/QuickLinks";
 import NotificationsCard from "../../components/NotificationsCard";
 
-import GraphFlow from "../../components/GraphFlow";
-import ForceTree from "../../components/ForceTree";
 
 export default function DashboardWireframe() {
   return (
@@ -124,28 +122,6 @@ export default function DashboardWireframe() {
           <div>
             <h3 className="text-lg font-medium mb-3">Recent Users</h3>
             <UsersTable limit={5} />
-          </div>
-        </div>
-      </section>
-
-      {/* Graphs & Visuals */}
-      <section>
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-          Graphs & Visuals
-        </h2>
-        <div className="space-y-8">
-          {/* User Flow Diagram */}
-          <div>
-            <h3 className="text-lg font-medium mb-3">User Journey Flow</h3>
-            <GraphFlow />
-          </div>
-
-          {/* Sales Analytics Chart */}
-          <div>
-            <h3 className="text-lg font-medium mb-3">
-              Monthly Sales Performance
-            </h3>
-            <ForceTree />
           </div>
         </div>
       </section>

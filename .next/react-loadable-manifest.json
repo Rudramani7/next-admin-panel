@@ -1,1 +1,15 @@
-{}
+{
+  "app\\visuals\\page.tsx -> ../../components/ForceTree": {
+    "id": "app\\visuals\\page.tsx -> ../../components/ForceTree",
+    "files": [
+      "static/chunks/_app-pages-browser_components_ForceTree_tsx.js"
+    ]
+  },
+  "app\\visuals\\page.tsx -> ../../components/GraphFlow": {
+    "id": "app\\visuals\\page.tsx -> ../../components/GraphFlow",
+    "files": [
+      "static/css/_app-pages-browser_components_GraphFlow_tsx.css",
+      "static/chunks/_app-pages-browser_components_GraphFlow_tsx.js"
+    ]
+  }
+}
